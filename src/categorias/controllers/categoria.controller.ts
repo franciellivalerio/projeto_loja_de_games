@@ -5,7 +5,7 @@ import { CategoriaService } from "../service/categoria.service";
 @Controller('/categorias')
 
 export class CategoriaController {
-    constructor(private categoriaService: CategoriaService) {}
+    constructor(private readonly categoriaService: CategoriaService) {}
 
     @Get()
     @HttpCode(HttpStatus.OK)
